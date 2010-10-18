@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Shortify - A Goo.gl URL Shortener API</title>
+    </head>
+    <body>
+    <h1>Shortify</h1>
+    <p>
+        A simple to use api for the <a href="http://goo.gl">Goo.gl</a>
+        URL Shortener service. 
+    </p>
+    <h3>How to call the API ? </h3>
+    <p>
+        <code>
+            <a href="http://shortify.appspot.com/shorty?url=[longURL]">http://shortify.appspot.com/shorty?url=[longURL]</a>
+        </code>
+        <br/>
+        Note : Change the [longURL] with the URL you want to shortify.
+        <br/>
+    </p>
+    <br/>
+    <h4>Example</h4>
+    <h5>Request</h5>
+    <a href="http://shortify.appspot.com/shorty?url=http://www.google.com">http://shortify.appspot.com/shorty?url=http://www.google.com</a>
+    <h5>Response</h5>
+    <code>
+        {"short_url":"http://goo.gl/fbsS","added_to_history":false} 
+    </code>
+    <br/>
+    <h5>QR Code</h5>
+    <p>
+        Just add the .qr extension in the end of your goo.gl URL. For example, if your Goo.gl url is <a href="http://goo.gl/fbsS">http://goo.gl/fbsS</a>. Then add .qr extension at the end of your url. So your QR Code URL will be <a href="http://goo.gl/fbsS.qr">http://goo.gl/fbsS.qr</a>.
+        <br/>
+        <img src="http://goo.gl/fbsS.qr" />
+    </p><h4>Error Handling</h4>
+    <p>
+        If no URL is specified - 
+        <br/>
+        <code>
+            {"error_message":"Bad request"}
+        </code>
+    </p>
+    <br/>
+    <h3>Source-code</h3>
+    <p>
+        Grab the source code at <a href="http://github.com/sachin-handiekar/Shortify">GitHub</a>
+    </p>
+    <br/>
+    <p>
+        Developed by <a href="http://sachin.handiekar.me">Sachin Handiekar</a>.
+    </p>
+    </div>
+</div>
+</body>
+</html>
